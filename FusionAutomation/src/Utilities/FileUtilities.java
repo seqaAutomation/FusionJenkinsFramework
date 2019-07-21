@@ -18,7 +18,7 @@ public class FileUtilities {
 
 	public static String  getDataFromConfig(String key) 
 	  {
-		  File file = new File ("./Files/config.properties");
+		  File file = new File ("./src/Files/config.properties");
 		  Properties pro = null;
 		  try {
 			  FileInputStream fis = new FileInputStream(file);
@@ -79,7 +79,7 @@ public class FileUtilities {
 	
 	public List getClassName()
 	  {
-		Workbook wb = readFromExcel("./Files/TestExecutionSheet.xlsx");
+		Workbook wb = readFromExcel("./src/Files/TestExecutionSheet.xlsx");
 		Sheet sh = wb.getSheetAt(0);
 		Row row = null;
 		List<String> classList =new  ArrayList<String>();
@@ -100,7 +100,7 @@ public class FileUtilities {
 	  
 	  public  String xpath(String sheetName,String xpathValue)
 	  {
-		  Workbook wb = readFromExcel("./Files/OR.xlsx");
+		  Workbook wb = readFromExcel("./src/Files/OR.xlsx");
 		  String xpath="";
 		  Sheet sheet = wb.getSheet(sheetName);
 		  int rowCount = sheet.getLastRowNum();

@@ -184,7 +184,7 @@ public class XmlGenerator extends HelperFunctions {
 		}
 
 	public static List getClassName() {
-		Workbook wb = fileUtility.readFromExcel("./Files/TestExecutionSheet.xlsx");
+		Workbook wb = fileUtility.readFromExcel("./src/Files/TestExecutionSheet.xlsx");
 		Sheet sh = wb.getSheetAt(0);
 		Row row = null;
 		List<String> classList = new ArrayList<String>();
