@@ -18,10 +18,13 @@ public class FileUtilities {
 
 	public static String  getDataFromConfig(String key) 
 	  {
+		System.out.println("In get DataFRom Config");
 		  File file = new File ("./src/Files/config.properties");
+		  System.out.println("Out get DataFRom Config");
 		  Properties pro = null;
 		  try {
 			  FileInputStream fis = new FileInputStream(file);
+			  System.out.println("Out get DataFRom Config : 1");
 			  pro = new Properties();
 			  pro.load(fis);
 		  	  } 
