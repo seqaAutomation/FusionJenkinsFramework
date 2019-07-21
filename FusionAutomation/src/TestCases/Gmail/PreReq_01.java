@@ -14,8 +14,11 @@ public class PreReq_01 extends Base {
 	@Test
 	public void testMethod() {
 		report.info("Test Case : Create Rest setup and OSC profile values");
+		System.out.println("qwerty : 1");
 		RestLib restLib = new RestLib();
+		System.out.println("qwerty : 1\2");
 		CommonLib commonLib = new CommonLib();
+		System.out.println("qwerty : 123");
 		Map<String, String> testData = getTestData("PreReq_01");
 		Map<String, String> testDataCommon = getTestData("commonTestData");
 		System.out.println("qwerty : 1");

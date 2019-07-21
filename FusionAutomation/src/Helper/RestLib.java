@@ -101,7 +101,7 @@ public class RestLib extends Base{
 //	  
 //  }
 //  
-  @Test
+  
   public void test()
   {
 	 Map<String, String> restBody= restResponse("GET","ebenes","Welcome1","https://fuscdrmsmc422-fa-ext.us.oracle.com:443/salesApi/resources/latest/goiApps?onlyData=true&q=IsActive=Y","");
