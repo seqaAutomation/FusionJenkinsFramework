@@ -231,8 +231,12 @@ public void clickInMail(String xpath) {
 	}
 
 	public Map getTestData(String parameter) {
+		
+		System.out.println("1");
 		String callerPathName = new Exception().getStackTrace()[1].getClassName();
+		System.out.println("2");
 		String callerClassName = new Exception().getStackTrace()[1].getFileName().replace(".java", "");
+		System.out.println("3");
 		String packageName = callerPathName.replace("TestCases.", "").replace("." + callerClassName, "")
 				.replace("ProductLib.", "");
 		System.out.println(packageName);
