@@ -32,10 +32,12 @@ public class ConfigCreator {
       if(url !=null)
       {
     	  props.setProperty("URL", url);
+    	  System.out.println("URL : "+url);
       }
       if(browser !=null)
       {
     	  props.setProperty("Browser", browser);
+    	  
       }
       if(productParallelRun !=null)
       {
@@ -52,14 +54,17 @@ public class ConfigCreator {
       if(product !=null)
       {
       props.setProperty("Product", product);
+      System.out.println("Product : "+product);
       }
       if(sendEmail !=null)
       {
     	  props.setProperty("SendEmail", sendEmail);
+    	  System.out.println("SendEmail : "+sendEmail);
       }
       if(emailId !=null)
       {
     	  props.setProperty("EmailId", emailId);
+    	  System.out.println("emailId : "+emailId);
       }
       if(release !=null)
       {
