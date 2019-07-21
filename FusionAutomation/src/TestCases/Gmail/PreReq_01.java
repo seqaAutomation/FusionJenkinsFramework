@@ -16,10 +16,8 @@ public class PreReq_01 extends Base {
 		report.info("Test Case : Create Rest setup and OSC profile values");
 		RestLib restLib = new RestLib();
 		CommonLib commonLib = new CommonLib();
-		System.out.println("qwerty : 123");
 		Map<String, String> testData = getTestData("PreReq_01");
 		Map<String, String> testDataCommon = getTestData("commonTestData");
-		System.out.println("qwerty : 1");
 		String testDataPath = "./src/ProductLib/Gmail/TestData/";
 
 		String patchFilePath = testDataPath+testData.get("patchFilePath");
@@ -29,7 +27,6 @@ public class PreReq_01 extends Base {
 		String accName = testData.get("accName");
 		String opptyName = testData.get("opptyName");
 		String leadName = testData.get("leadName");
-		System.out.println("qwerty");
 		String url = fileUtility.getDataFromConfig("URL");
 		report.info("Url : " + url);
 //		String uri = testData.get("getUri");

@@ -232,18 +232,17 @@ public void clickInMail(String xpath) {
 
 	public Map getTestData(String parameter) {
 		
-		System.out.println("1");
 		String callerPathName = new Exception().getStackTrace()[1].getClassName();
-		System.out.println(callerPathName);
+//		System.out.println(callerPathName);
 //		String callerClassName = new Exception().getStackTrace()[1].getFileName().replace(".java", "");
 //		System.out.println(callerClassName);
 //		String packageName = callerPathName.replace("TestCases.", "").replace("." + callerClassName, "").replace("ProductLib.", "");
 		int f = callerPathName.indexOf('.')+1;
 		int l = callerPathName.indexOf('.',callerPathName.indexOf('.')+1);
-		System.out.println(f);
-		System.out.println(l);
+//		System.out.println(f);
+//		System.out.println(l);
 		String packageName =callerPathName.substring(f,l);
-		System.out.println(packageName);
+//		System.out.println(packageName);
 		return fileUtility.getTestData(parameter, packageName);
 
 	}
