@@ -27,8 +27,6 @@ public class Base extends HelperFunctions {
   public void setup() 
   {
 	  report = new Report();
-	  ConfigCreator configFileCreate = new ConfigCreator();
-	  configFileCreate.loadConfigValFromJenkins();
 	  
   }
   

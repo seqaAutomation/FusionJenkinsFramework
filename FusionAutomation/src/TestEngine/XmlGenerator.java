@@ -20,11 +20,14 @@ import org.testng.xml.XmlSuite.ParallelMode;
 import org.testng.xml.XmlTest;
 
 import Helper.HelperFunctions;
+import Utilities.ConfigCreator;
 import Utilities.FileUtilities;
 
 public class XmlGenerator extends HelperFunctions {
 	@Test
 	public void xmlCreate() {
+		ConfigCreator configFileCreate = new ConfigCreator();
+		  configFileCreate.loadConfigValFromJenkins();
 		XmlSuite suite = new XmlSuite();
 		suite.setName("OSCExecutionSuite");
 		if (fileUtility.getDataFromConfig("ProductParallelRun").equalsIgnoreCase("Yes")) {
