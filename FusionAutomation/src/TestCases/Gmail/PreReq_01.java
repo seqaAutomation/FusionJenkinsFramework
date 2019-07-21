@@ -18,7 +18,9 @@ public class PreReq_01 extends Base {
 		CommonLib commonLib = new CommonLib();
 		Map<String, String> testData = getTestData("PreReq_01");
 		Map<String, String> testDataCommon = getTestData("commonTestData");
-		String testDataPath = "./src/test/com/ProductLib/Gmail/TestData/";
+		System.out.println("qwerty : 1");
+		String testDataPath = "./src/ProductLib/Gmail/TestData/";
+
 		String patchFilePath = testDataPath+testData.get("patchFilePath");
 		String postFilePath = testDataPath+testData.get("postFilePath");
 		String oscUsername = testDataCommon.get("oscUsername");
@@ -26,6 +28,7 @@ public class PreReq_01 extends Base {
 		String accName = testData.get("accName");
 		String opptyName = testData.get("opptyName");
 		String leadName = testData.get("leadName");
+		System.out.println("qwerty");
 		String url = fileUtility.getDataFromConfig("URL");
 		report.info("Url : " + url);
 //		String uri = testData.get("getUri");
