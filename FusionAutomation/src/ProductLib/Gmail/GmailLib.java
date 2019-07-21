@@ -58,6 +58,7 @@ public class GmailLib extends Base {
 //			clickElement("xGmailselectaccountSelect");
 			think(3000);
 			String accSel = replaceXpath("xGmailselectaccountSelect", gmailUserName+"@gmail.com");
+			System.out.println(accSel);
 			click(accSel);
 			int c =0 ;
 			think(3000);
